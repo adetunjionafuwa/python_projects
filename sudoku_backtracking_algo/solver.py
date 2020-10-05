@@ -20,5 +20,11 @@ def print_board(board):
       print(str(board[i][j]) + " ", end= "")
     print()
 
+def find_empty(board):
+  for i in range(len(board)):
+    for j in range(len(board[i])):
+      if board[i][j] == 0:
+        return (i, j) # row, col
+
 
 print_board(board)
